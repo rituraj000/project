@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>be fit</title>
+</head>
+<link rel="stylesheet" href="project1.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img.jpg');
+        color: rgb(196, 35, 35);
+        font-family: Roboto Slab;
+    }
+
+    .left {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        
+
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+        /* invert ka use krrka hmm color change krr sakta hai its is a function of css */
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    /* mid ma krrna ka liya 3 chiz ka istamaal krrta hai woo hai -
+ display: block;
+        width: 33px;
+        margin: 12px auto; */
+    .mid {
+        display: block;
+        width: 1000px;
+        margin: 28px auto;
+       
+       
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        
+    }
+
+    .navbar {}
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(53, 150, 235);
+        text-decoration: none;
+        padding: 34px 24px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        background-color: black;
+        color: rgb(252, 254, 255);
+        padding: 4px 14px;
+        border: 2px solid green;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: Roboto Slab;
+    }
+
+    .btn:hover {
+        background-color: rgb(33, 32, 32);
+        color: antiquewhite;
+    }
+
+    .container {
+        border: 2px solid rgb(129, 28, 28);
+        margin: 150px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        text-align: center;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 8px;
+        font-size: 25px;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Be Fit</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- Right button for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">E-Mail Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Best Gym Of Delhi Now :</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Write Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Write Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Write Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Write Your Locality">
+            </div>
+            <button type="submit" class="btn">submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
